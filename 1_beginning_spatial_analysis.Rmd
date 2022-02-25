@@ -150,7 +150,7 @@ nrow(minnesota_lakes)-nrow(ia_il_lakes)
 y axis (check out geom_histogram)
 
 *Minnesota has a much larger distribution of lakes at all sizes than Iowa, with the largest lakes being nearly five times the largest size of Iowa.* 
-```{r}
+```{r, warning=F,message=F}
 
 # Using st_join to join the spatial object and sf dataframes. 
 # subsetting states
@@ -193,6 +193,4 @@ ia_il_lakes %>%
 ## 5) What other data sources might we use to understand how reservoirs and 
 natural lakes vary in size in these three states? 
 
-*It appears that the USGS's Water Resources Mission Area had spatial data related to reservoir and lake size, as well as the NWIS Mapper and NSDI Water Node. The EPA's LAKECAT seems to have related data too.*
-
-
+*Lakes vary in size (both in terms of surface area and volume) over time. Each of the three states' Department of Natural Resources are responsible for the maintenance of water body data. Additionally, the USGS's Water Resources Mission Area had spatial data related to reservoir and lake size, as well as the NWIS Mapper and NSDI Water Node. The EPA's LAKECAT seems to have related data too.*
